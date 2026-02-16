@@ -71,6 +71,7 @@ npm run dev
 - Vite for fast development
 - Tailwind CSS v4 with MercadoLibre branding
 - TanStack Query for data fetching (optional)
+- API proxy configured (`/api/*` → `http://localhost:8080`)
 
 **Client runs on:** `http://localhost:5173`
 

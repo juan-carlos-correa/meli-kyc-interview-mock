@@ -14,8 +14,10 @@ import { Button, Card, Banner, Stepper } from "./components/ui";
 
 The messy KYC data is available at:
 ```
-GET http://localhost:8080/api/kyc/raw
+GET /api/kyc/raw
 ```
+
+Note: The Vite dev server is configured to proxy `/api/*` requests to `http://localhost:8080`
 
 ## Component Overview
 

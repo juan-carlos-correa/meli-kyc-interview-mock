@@ -54,8 +54,10 @@ Pre-built MercadoLibre-styled components are available in `src/components/ui/`:
 The backend API serves messy KYC data at:
 
 ```
-GET http://localhost:8080/api/kyc/raw
+GET /api/kyc/raw
 ```
+
+The Vite dev server is configured to proxy `/api/*` requests to the backend at `http://localhost:8080`
 
 This endpoint returns intentionally inconsistent data with:
 
