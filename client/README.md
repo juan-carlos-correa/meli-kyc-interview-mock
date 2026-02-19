@@ -28,7 +28,6 @@ client/
 │   │       ├── Button.tsx
 │   │       ├── Card.tsx
 │   │       ├── Banner.tsx
-│   │       ├── Stepper.tsx
 │   │       └── README.md    # Component documentation
 │   ├── App.tsx              # Main application (your work goes here)
 │   └── main.tsx
@@ -45,7 +44,6 @@ Pre-built MercadoLibre-styled components are available in `src/components/ui/`:
 - **Button** - Primary, secondary, and ghost variants
 - **Card** - Flexible card layout with header, content, footer
 - **Banner** - Alert/notification component (info, success, warning, error)
-- **Stepper** - Multi-step progress indicator
 
 📖 **See `COMPONENTS.md` for complete usage examples**
 
@@ -68,13 +66,13 @@ This endpoint returns intentionally inconsistent data with:
 
 ## Your Task
 
-Build a multi-step KYC verification form in `src/App.tsx` that:
+Build a KYC review UI in `src/App.tsx` that:
 
 1. **Fetches and normalizes** the messy data from the API
-2. **Displays a multi-step form** using the provided UI components
+2. **Displays grouped submissions** in a clear list using the provided UI components
 3. **Handles data inconsistencies** gracefully
 4. **Shows appropriate warnings** for low confidence scores or missing data
-5. **Provides good UX** for the verification process
+5. **Supports basic interaction** (e.g., selecting an item and showing details)
 
 ## Tech Stack
 

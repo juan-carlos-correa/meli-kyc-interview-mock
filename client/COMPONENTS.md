@@ -7,7 +7,7 @@
 All components are located in `src/components/ui/` and can be imported from the barrel export:
 
 ```tsx
-import { Button, Card, Banner, Stepper } from "./components/ui";
+import { Button, Card, Banner } from "./components/ui";
 ```
 
 ## API Endpoint
@@ -93,33 +93,6 @@ Alert/notification component with semantic variants.
 
 ---
 
-### 📊 Stepper Component
-
-**File**: `src/components/ui/Stepper.tsx`
-
-Visual progress indicator for multi-step flows.
-
-```tsx
-const steps = [
-  { id: '1', label: 'Personal Info', description: 'Basic details' },
-  { id: '2', label: 'Documents', description: 'Upload ID' },
-  { id: '3', label: 'Verification', description: 'Review' },
-];
-
-<Stepper steps={steps} currentStep={2} />
-<Stepper steps={steps} currentStep={1} variant="compact" />
-```
-
-**Features**:
-
-- Completed steps show checkmark
-- Current step is highlighted with ring
-- Upcoming steps are grayed out
-- Optional descriptions
-- Compact variant available
-
----
-
 ## MercadoLibre Design Tokens
 
 ### Colors
@@ -162,19 +135,8 @@ rounded - meli; // 6px
 
 ```tsx
 function KYCForm() {
-  const [step, setStep] = useState(1);
-
-  const steps = [
-    { id: "1", label: "Info", description: "Personal details" },
-    { id: "2", label: "Docs", description: "Upload ID" },
-    { id: "3", label: "Done", description: "Complete" },
-  ];
-
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-6">
-      {/* Progress */}
-      <Stepper steps={steps} currentStep={step} />
-
       {/* Alert */}
       <Banner variant="info">
         <BannerTitle>Secure Process</BannerTitle>
@@ -213,9 +175,6 @@ import {
   type CardProps,
   Banner,
   type BannerProps,
-  Stepper,
-  type StepperProps,
-  type Step,
 } from "./components/ui";
 ```
 

@@ -142,52 +142,6 @@ import { Banner, BannerTitle, BannerDescription } from "./components/ui";
 
 ---
 
-### Stepper
-
-A visual progress indicator for multi-step processes (visual only, navigation not included).
-
-#### Props
-
-```typescript
-interface Step {
-  id: string;
-  label: string;
-  description?: string;
-}
-
-interface StepperProps {
-  steps: Step[];
-  currentStep: number; // 1-indexed
-  variant?: "default" | "compact";
-  // ...extends HTMLAttributes
-}
-```
-
-#### Features
-
-- Visual-only navigation header
-- Shows completed, current, and upcoming steps
-- Connecting lines between steps
-- Optional descriptions
-- Compact variant for space-constrained layouts
-
-#### Usage
-
-```tsx
-import { Stepper, type Step } from "./components/ui";
-
-const steps: Step[] = [
-  { id: "1", label: "Personal Info", description: "Basic details" },
-  { id: "2", label: "Documents", description: "Upload ID" },
-  { id: "3", label: "Verification", description: "Review" },
-  { id: "4", label: "Complete", description: "Done!" },
-];
-
-<Stepper steps={steps} currentStep={2} />;
-```
-
----
-
 ## Tailwind Configuration
 
 The project uses a custom Tailwind config with MercadoLibre-specific values:

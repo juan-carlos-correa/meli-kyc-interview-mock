@@ -81,7 +81,6 @@ MercadoLibre-styled components are available in `client/src/components/ui/`:
 - **Button** - Primary, secondary, and ghost variants
 - **Card** - Flexible card layout with header/content/footer
 - **Banner** - Alert/notification component (info, success, warning, error)
-- **Stepper** - Multi-step progress indicator
 
 📖 **See `client/COMPONENTS.md` for usage examples**
 
