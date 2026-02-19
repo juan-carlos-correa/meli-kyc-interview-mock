@@ -39,7 +39,8 @@
         }
       ],
       "verification_status": "approved",
-      "processed_at": "2026-02-15T10:30:00Z"
+      "processed_at": "2026-02-15T10:30:00Z",
+      "verificationStatus": "approved"
     },
     {
       "submission_id": 67890,
@@ -87,10 +88,10 @@
         }
       ],
       "status": "pending_review",
-      "timestamp": "2026-02-14T15:45:00Z"
+      "timestamp": "2026-02-14T15:45:00Z",
+      "verificationStatus": "pending_review"
     },
     {
-      "submissionId": "ABC-98765",
       "user_info": {
         "first_name": "Chen",
         "lastName": "Wei",
@@ -125,7 +126,9 @@
         }
       ],
       "verification": "approved",
-      "processed_timestamp": "2026-02-13T08:20:00Z"
+      "processed_timestamp": "2026-02-13T08:20:00Z",
+      "verificationStatus": "approved",
+      "submission_id": "ABC-98765"
     },
     {
       "submission_id": 11223,
@@ -176,10 +179,10 @@
         }
       ],
       "status": "approved",
-      "processing_date": "2026-02-12T14:10:00Z"
+      "processing_date": "2026-02-12T14:10:00Z",
+      "verificationStatus": "approved"
     },
     {
-      "id": "KYC-55667",
       "applicant": {
         "given_name": "Ahmed",
         "family_name": "Al-Rashid",
@@ -225,7 +228,9 @@
         }
       ],
       "review_status": "pending",
-      "submitted_on": "2026-02-11T11:30:00Z"
+      "submitted_on": "2026-02-11T11:30:00Z",
+      "verificationStatus": "pending",
+      "submission_id": "KYC-55667"
     },
     {
       "submission_id": "78901",
@@ -264,10 +269,10 @@
         }
       ],
       "status": "approved",
-      "process_time": "2026-02-10T09:15:00Z"
+      "process_time": "2026-02-10T09:15:00Z",
+      "verificationStatus": "approved"
     },
     {
-      "sub_id": 33445,
       "person": {
         "first": "Carlos",
         "last": "Silva",
@@ -311,10 +316,11 @@
         }
       ],
       "verification_state": "needs_review",
-      "created_at": "2026-02-09T16:20:00Z"
+      "created_at": "2026-02-09T16:20:00Z",
+      "verificationStatus": "needs_review",
+      "submission_id": 33445
     },
     {
-      "submissionID": "XYZ-12345",
       "customer": {
         "firstName": "Emma",
         "surname": "Thompson",
@@ -360,10 +366,11 @@
         }
       ],
       "verification_status": "approved",
-      "processed": "2026-02-08T13:45:00Z"
+      "processed": "2026-02-08T13:45:00Z",
+      "verificationStatus": "approved",
+      "submission_id": "XYZ-12345"
     },
     {
-      "submission": 99887,
       "user_data": {
         "name_first": "Raj",
         "name_last": "Patel",
@@ -390,7 +397,7 @@
           "address_on_card": {
             "text": "301 Sunrise Apartments, MG Road, Koramangala, Bangalore - 560034"
           },
-          "confidence": 0.90
+          "confidence": 0.9
         },
         {
           "type": "pan_card",
@@ -415,10 +422,11 @@
         }
       ],
       "status": "under_review",
-      "timestamp": "2026-02-07T10:30:00Z"
+      "timestamp": "2026-02-07T10:30:00Z",
+      "verificationStatus": "under_review",
+      "submission_id": 99887
     },
     {
-      "id": "KYC-44332",
       "applicant_info": {
         "given_name": "Sophie",
         "family_name": "Dubois",
@@ -464,11 +472,489 @@
         }
       ],
       "review_status": "approved",
-      "processed_date": "2026-02-06T15:20:00Z"
+      "processed_date": "2026-02-06T15:20:00Z",
+      "verificationStatus": "approved",
+      "submission_id": "KYC-44332"
+    },
+    {
+      "submission_id": "12345-SEED-1",
+      "user": {
+        "first_name": "John",
+        "lastName": "Doe",
+        "email": "john.doe+seed1@example.com",
+        "phone_number": "+1-555-0123",
+        "dateOfBirth": "1985-03-15",
+        "confidence": 0.95
+      },
+      "address": {
+        "street_address": "123 Main Street",
+        "city": "New York",
+        "state": "NY",
+        "zipCode": "10001",
+        "country": "USA",
+        "confidence_score": 0.88
+      },
+      "documents": [
+        {
+          "document_type": "drivers_license",
+          "doc_number": "DL123456789",
+          "issuing_country": "USA",
+          "issuing_state": "NY",
+          "expiration_date": "2028-03-15",
+          "extracted_data": {
+            "fname": "John",
+            "lname": "Doe",
+            "dob": "03/15/1985",
+            "address": {
+              "line1": "123 Main St",
+              "city": "New York",
+              "zip": 10001
+            }
+          },
+          "confidence": 0.92
+        }
+      ],
+      "verification_status": "pending_review",
+      "processed_at": "2026-02-19T10:30:00.000Z",
+      "verificationStatus": "pending_review"
+    },
+    {
+      "submission_id": 167892,
+      "user": {
+        "fname": "Maria",
+        "last_name": "Garcia",
+        "Email": "maria.g+seed2@example.com",
+        "phone": "555-9876",
+        "date_of_birth": "1990-07-22"
+      },
+      "Address": {
+        "street": "456 Oak Avenue",
+        "City": "Los Angeles",
+        "STATE": "CA",
+        "postal_code": "90001",
+        "Country": "United States",
+        "confidence": 0.76
+      },
+      "documents": [
+        {
+          "type": "passport",
+          "number": "P87654321",
+          "country": "USA",
+          "expiry": "2029-07-22",
+          "data": {
+            "firstName": "Maria",
+            "familyName": "Garcia",
+            "birthDate": "1990-07-22",
+            "nationality": "US"
+          },
+          "confidence_score": 0.89
+        },
+        {
+          "type": "utility_bill",
+          "provider": "Electric Co",
+          "account_num": "ELEC-789456",
+          "bill_date": "2026-01-15",
+          "extracted_address": {
+            "line_1": "456 Oak Ave",
+            "line_2": "Apt 3B",
+            "city_name": "Los Angeles",
+            "state_code": "CA",
+            "zip": "90001"
+          }
+        }
+      ],
+      "status": "pending_review",
+      "timestamp": "2026-02-19T15:45:00.000Z",
+      "verificationStatus": "pending_review"
+    },
+    {
+      "user_info": {
+        "first_name": "Chen",
+        "lastName": "Wei",
+        "email_address": "chen.wei+seed3@example.com",
+        "phoneNumber": "+86-138-0013-8000",
+        "DOB": "1988-11-30",
+        "confidence_level": 0.91
+      },
+      "residential_address": {
+        "address_line_1": "789 Nanjing Road",
+        "address_line_2": "Building 5, Unit 12",
+        "city": "Shanghai",
+        "province": "Shanghai",
+        "postal_code": 200000,
+        "country_code": "CN",
+        "confidence": 0.85
+      },
+      "identity_documents": [
+        {
+          "documentType": "national_id",
+          "id_number": "310115198811300015",
+          "issuing_authority": "Shanghai Public Security Bureau",
+          "issue_date": "2010-01-15",
+          "expiration": "2030-01-15",
+          "extracted_fields": {
+            "name": "Chen Wei",
+            "birthdate": "1988-11-30",
+            "gender": "M",
+            "address": "789 Nanjing Rd, Shanghai"
+          },
+          "confidence": 0.94
+        }
+      ],
+      "verification": "pending_review",
+      "processed_timestamp": "2026-02-19T08:20:00.000Z",
+      "verificationStatus": "pending_review",
+      "submission_id": "ABC-98765-SEED-3"
+    },
+    {
+      "submission_id": 111227,
+      "user": {
+        "FirstName": "Sarah",
+        "last_name": "Johnson",
+        "email": "s.johnson+seed4@example.com",
+        "mobile": "555-1234",
+        "birth_date": "1995-05-10"
+      },
+      "address_information": {
+        "street_name": "321 Elm Street",
+        "apt_number": "5C",
+        "City": "Chicago",
+        "State": "IL",
+        "zip_code": "60601",
+        "country_name": "USA"
+      },
+      "documents": [
+        {
+          "doc_type": "state_id",
+          "document_number": "IL987654321",
+          "issued_by": "Illinois",
+          "country": "USA",
+          "expires_on": "2027-05-10",
+          "extracted_info": {
+            "first_name": "Sarah",
+            "last_name": "Johnson",
+            "dob": "05/10/1995",
+            "residential_address": {
+              "street": "321 Elm St Apt 5C",
+              "city": "Chicago",
+              "state": "IL",
+              "zip": "60601"
+            }
+          },
+          "confidence_score": 0.87
+        },
+        {
+          "doc_type": "bank_statement",
+          "bank_name": "First National Bank",
+          "account_holder": "Sarah Johnson",
+          "statement_date": "2026-01-31",
+          "address_on_statement": {
+            "full_address": "321 Elm Street Apt 5C, Chicago, IL 60601"
+          },
+          "confidence": 0.72
+        }
+      ],
+      "status": "pending_review",
+      "processing_date": "2026-02-19T14:10:00.000Z",
+      "verificationStatus": "pending_review"
+    },
+    {
+      "applicant": {
+        "given_name": "Ahmed",
+        "family_name": "Al-Rashid",
+        "email_addr": "ahmed.rashid+seed5@example.com",
+        "tel": "+971-50-123-4567",
+        "date_birth": "1982-09-18",
+        "confidence": 0.89
+      },
+      "location": {
+        "address_1": "Dubai Marina Tower",
+        "address_2": "Unit 2501",
+        "city_name": "Dubai",
+        "emirate": "Dubai",
+        "postal": "00000",
+        "country": "UAE",
+        "confidence_score": 0.81
+      },
+      "supporting_documents": [
+        {
+          "document_category": "passport",
+          "passport_number": "A12345678",
+          "nationality": "UAE",
+          "issuing_nation": "United Arab Emirates",
+          "date_of_issue": "2021-09-18",
+          "date_of_expiry": "2031-09-18",
+          "personal_data": {
+            "name": "Ahmed Al-Rashid",
+            "birth_date": "18/09/1982",
+            "place_of_birth": "Abu Dhabi",
+            "gender": "Male"
+          },
+          "confidence": 0.96
+        },
+        {
+          "document_category": "residence_visa",
+          "visa_num": "201/2024/12345",
+          "sponsor": "ABC Company LLC",
+          "valid_until": "2027-06-30",
+          "extracted_data": {
+            "holder_name": "Ahmed Al-Rashid",
+            "residence": "Dubai Marina Tower, Dubai"
+          }
+        }
+      ],
+      "review_status": "pending_review",
+      "submitted_on": "2026-02-19T11:30:00.000Z",
+      "verificationStatus": "pending_review",
+      "submission_id": "KYC-55667-SEED-5"
+    },
+    {
+      "submission_id": "78901-SEED-6",
+      "user_details": {
+        "fname": "Yuki",
+        "lname": "Tanaka",
+        "email_id": "yuki.t+seed6@example.com",
+        "phone_num": "+81-90-1234-5678",
+        "dob": "1993-12-05",
+        "confidence_level": 0.93
+      },
+      "current_address": {
+        "address_line1": "1-2-3 Shibuya",
+        "address_line2": "Shibuya-ku",
+        "city": "Tokyo",
+        "prefecture": "Tokyo",
+        "zip": "150-0002",
+        "country": "Japan",
+        "conf_score": 0.88
+      },
+      "identity_docs": [
+        {
+          "type": "drivers_license",
+          "license_number": "123456789012",
+          "prefecture_issued": "Tokyo",
+          "country_issued": "Japan",
+          "valid_until": "2029-12-05",
+          "personal_info": {
+            "name": "Tanaka Yuki",
+            "birth_date": "1993-12-05",
+            "current_address": {
+              "full": "1-2-3 Shibuya, Shibuya-ku, Tokyo 150-0002"
+            }
+          },
+          "confidence": 0.91
+        }
+      ],
+      "status": "pending_review",
+      "process_time": "2026-02-19T09:15:00.000Z",
+      "verificationStatus": "pending_review"
+    },
+    {
+      "person": {
+        "first": "Carlos",
+        "last": "Silva",
+        "mail": "carlos.silva+seed7@example.com",
+        "tel_number": "+55-11-98765-4321",
+        "birthday": "1987-04-25"
+      },
+      "address_details": {
+        "street_addr": "Avenida Paulista 1000",
+        "neighborhood": "Bela Vista",
+        "municipality": "São Paulo",
+        "state_province": "SP",
+        "cep": "01310-100",
+        "nation": "Brazil",
+        "confidence": 0.79
+      },
+      "verification_documents": [
+        {
+          "doc_category": "cpf",
+          "cpf_number": "123.456.789-00",
+          "holder_name": "Carlos Silva",
+          "confidence_score": 0.86
+        },
+        {
+          "doc_category": "rg",
+          "rg_num": "12.345.678-9",
+          "issuer": "SSP-SP",
+          "issue_date": "2015-04-25",
+          "name_on_doc": "Carlos Silva",
+          "birth_date_on_doc": "25/04/1987"
+        },
+        {
+          "doc_category": "proof_of_address",
+          "document_type": "utility_bill",
+          "service_provider": "Electricity Company",
+          "billing_period": "2026-01",
+          "address_extracted": {
+            "full_address": "Av. Paulista 1000, Bela Vista, São Paulo - SP, 01310-100"
+          },
+          "confidence": 0.68
+        }
+      ],
+      "verification_state": "pending_review",
+      "created_at": "2026-02-19T16:20:00.000Z",
+      "verificationStatus": "pending_review",
+      "submission_id": 133452
+    },
+    {
+      "customer": {
+        "firstName": "Emma",
+        "surname": "Thompson",
+        "e_mail": "emma.t+seed8@example.com",
+        "telephone": "+44-20-7946-0958",
+        "date_of_birth": "1991-08-14",
+        "conf": 0.92
+      },
+      "postal_address": {
+        "line_one": "10 Downing Street",
+        "line_two": "",
+        "town": "London",
+        "county": "Greater London",
+        "postcode": "SW1A 2AA",
+        "country_name": "United Kingdom",
+        "confidence": 0.84
+      },
+      "id_documents": [
+        {
+          "doc_type": "passport",
+          "passport_num": "123456789",
+          "issuing_country": "GBR",
+          "date_issued": "2019-08-14",
+          "expiry_date": "2029-08-14",
+          "holder_details": {
+            "given_names": "Emma",
+            "surname": "Thompson",
+            "date_birth": "14/08/1991",
+            "place_birth": "London",
+            "sex": "F"
+          },
+          "confidence_level": 0.95
+        },
+        {
+          "doc_type": "council_tax_bill",
+          "authority": "Westminster City Council",
+          "reference": "CT-2026-123456",
+          "period": "2025-2026",
+          "property_address": {
+            "address": "10 Downing Street, London, SW1A 2AA"
+          },
+          "confidence": 0.77
+        }
+      ],
+      "verification_status": "pending_review",
+      "processed": "2026-02-19T13:45:00.000Z",
+      "verificationStatus": "pending_review",
+      "submission_id": "XYZ-12345-SEED-8"
+    },
+    {
+      "user_data": {
+        "name_first": "Raj",
+        "name_last": "Patel",
+        "email_address": "raj.patel+seed9@example.com",
+        "phone": "+91-98765-43210",
+        "dob": "1989-06-20"
+      },
+      "residential_info": {
+        "flat_no": "301",
+        "building": "Sunrise Apartments",
+        "street": "MG Road",
+        "area": "Koramangala",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pin": 560034,
+        "country": "India"
+      },
+      "submitted_documents": [
+        {
+          "type": "aadhaar",
+          "aadhaar_number": "1234-5678-9012",
+          "name": "Raj Patel",
+          "dob": "20/06/1989",
+          "address_on_card": {
+            "text": "301 Sunrise Apartments, MG Road, Koramangala, Bangalore - 560034"
+          },
+          "confidence": 0.9
+        },
+        {
+          "type": "pan_card",
+          "pan_num": "ABCDE1234F",
+          "holder_name": "RAJ PATEL",
+          "father_name": "VIJAY PATEL",
+          "date_of_birth": "20/06/1989",
+          "confidence_score": 0.88
+        },
+        {
+          "type": "bank_statement",
+          "bank": "HDFC Bank",
+          "account_number": "XXXX-XXXX-5678",
+          "statement_month": "January 2026",
+          "customer_name": "Raj Patel",
+          "address": {
+            "line_1": "301, Sunrise Apartments",
+            "line_2": "MG Road, Koramangala",
+            "city": "Bangalore",
+            "pin_code": "560034"
+          }
+        }
+      ],
+      "status": "pending_review",
+      "timestamp": "2026-02-19T10:30:00.000Z",
+      "verificationStatus": "pending_review",
+      "submission_id": 199896
+    },
+    {
+      "applicant_info": {
+        "given_name": "Sophie",
+        "family_name": "Dubois",
+        "email": "sophie.dubois+seed10@example.com",
+        "mobile_phone": "+33-6-12-34-56-78",
+        "birth_date": "1994-03-12",
+        "confidence": 0.87
+      },
+      "residence_address": {
+        "street_number": "45",
+        "street_name": "Rue de Rivoli",
+        "apartment": "Apt 8",
+        "city": "Paris",
+        "department": "Île-de-France",
+        "postal_code": "75001",
+        "country": "France"
+      },
+      "documents_provided": [
+        {
+          "document_type": "carte_identite",
+          "id_card_number": "940312AB123",
+          "issued_by": "Préfecture de Paris",
+          "issue_date": "2020-03-12",
+          "expiry_date": "2030-03-12",
+          "extracted": {
+            "nom": "DUBOIS",
+            "prenom": "Sophie",
+            "date_naissance": "12/03/1994",
+            "lieu_naissance": "Paris",
+            "adresse": "45 Rue de Rivoli Apt 8, 75001 Paris"
+          },
+          "confidence_score": 0.93
+        },
+        {
+          "document_type": "proof_residence",
+          "type_detail": "electricity_bill",
+          "provider": "EDF",
+          "billing_date": "2026-01-20",
+          "address_on_bill": {
+            "full": "Sophie Dubois, 45 Rue de Rivoli Apt 8, 75001 Paris, France"
+          },
+          "confidence": 0.74
+        }
+      ],
+      "review_status": "pending_review",
+      "processed_date": "2026-02-19T15:20:00.000Z",
+      "verificationStatus": "pending_review",
+      "submission_id": "KYC-44332-SEED-10"
     }
   ],
   "metadata": {
-    "total_submissions": 10,
+    "total_submissions": 20,
     "ai_model": "KYC-Vision-v2.3",
     "processing_date": "2026-02-16",
     "average_confidence": 0.86,
